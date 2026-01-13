@@ -1,7 +1,7 @@
 /******************************************************************************
- * Họ và tên: [ĐIỀN TÊN TẠI ĐÂY]
- * MSSV:      [ĐIỀN MSSV TẠI ĐÂY]
- * Lớp:       [ĐIỀN LỚP TẠI ĐÂY]
+ * Họ và tên: [Lê Bá Tấn Khang]
+ * MSSV:      [PS184201]
+ * Lớp:       [CS21301]
  *****************************************************************************/
 
  // BÀI 2: XÂY DỰNG CHƯƠNG TRÌNH TÍNH CHU VI DIỆN TÍCH HCN 
@@ -10,15 +10,27 @@
 
 #include <stdio.h>
 
-int main(){
-    // Khai báo biến
+int main()
+{
+    // Khai báo 2 biến chiều dài và chiều rộng của hình chữ nhật
+    float ChieuDai, ChieuRong;
+    // Khai báo biến cho diện tích và chu vi của hình chữ nhật
+    float dienTich, chuVi;
 
-    // Nhập dữ liệu
+    // Người dùng nhập số đo chiều dài và chiều rộng
+    printf("Nhap chieu dai: ");
+    scanf("%f", &ChieuDai);
 
+    printf("Nhap chieu rong: ");
+    scanf("%f", &ChieuRong);
 
-    // Xử lý, tính toán
+    // Biểu thức tính toán của diện tích và chu vi hình chữ nhật
+    dienTich = ChieuDai * ChieuRong;
+    chuVi = (ChieuDai + ChieuRong) * 2;
 
-    // Hiển thị kết quả
+    // In ra màn hình kết quả diện tích và chu vi hình chữ nhật
+    printf("\nDien tich hinh chu nhat = %.2f\n", dienTich);
+    printf("Chu vi hinh chu nhat = %.2f\n", chuVi);
 
-
-}
+    return 0;
+}   
